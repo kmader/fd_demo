@@ -30,12 +30,14 @@ install:
   # python libs
   - sudo pip3 install --upgrade pip
   - sudo pip3 install numpy scipy tensorflow==1.7.1 h5py keras
+  - # download weights
+  - python3 scripts/vgg16_model.py 
   # run CMake
   - mkdir -p build && cd build
   - cmake ..
 
 script:
-  - python scripts/vgg16_model.py
+  - pwd
   - which $CXX
   - $CXX --version
   - make
