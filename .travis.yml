@@ -23,9 +23,6 @@ before_install:
     set -x
   - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
   - sudo python3 get-pip.py
-  - sudo pip install conan
-  - sudo pip install conan_package_tools
-  - conan user
 
 install:
   # system libs
