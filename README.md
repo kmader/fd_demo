@@ -1,5 +1,6 @@
-# fd_demo
-A demo of frugally deep using Hunter
+# fd_demo [![Build Status](https://travis-ci.org/kmader/fd_demo.svg?branch=master)](https://travis-ci.org/kmader/fd_demo)
+
+A demo using the frugally-deep library (Keras in C++) with Hunter package management
 
 ## Cloning Repo
 ```bash
