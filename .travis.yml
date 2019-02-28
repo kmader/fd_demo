@@ -32,6 +32,7 @@ install:
   - sudo pip3 install -qq numpy scipy tensorflow==1.7.1 h5py keras
   - # download weights
   - python3 scripts/vgg16_model.py 
+  - python3 scripts/sequential_model.py 
   # run CMake
   - mkdir -p build && cd build
   - cmake ..
@@ -42,3 +43,4 @@ script:
   - $CXX --version
   - make
   - ./main
+  - ./seq_model

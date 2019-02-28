@@ -16,4 +16,6 @@ hunter_add_package(frugally-deep)
 find_package(frugally-deep CONFIG REQUIRED)
 
 add_executable(main main.cpp)
+add_executable(seq_model seq_model.cpp)
 target_link_libraries(main PUBLIC frugally-deep::fdeep) # add frugally-deep and dependencies (libs/includes/flags/definitions)
+target_link_libraries(seq_model PUBLIC frugally-deep::fdeep) # add frugally-deep and dependencies (libs/includes/flags/definitions)
