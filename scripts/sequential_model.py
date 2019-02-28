@@ -2,7 +2,7 @@ import os, sys
 # convert model
 sys.path.append(os.path.join('lib', 'frugally-deep', 'keras_export'))
 from convert_model import convert
-
+import numpy as np
 from keras import layers, models
 s_mod = models.Sequential()
 s_mod.add(layers.Conv1D(3, (3,), input_shape=(None, 1), padding='same'))
